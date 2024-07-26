@@ -25,7 +25,7 @@ fun CountryItem(
     ) {
         Text(
             text = country.emoji,
-            fontSize = 52.sp
+            fontSize = 60.sp
         )
         Spacer(modifier = Modifier.width(16.dp))
 
@@ -34,7 +34,7 @@ fun CountryItem(
         ) {
             Text(
                 text = country.name,
-                fontSize = 48.sp
+                fontSize =30.sp
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(

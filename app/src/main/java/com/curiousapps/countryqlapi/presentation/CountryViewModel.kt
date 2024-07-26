@@ -6,12 +6,15 @@ import com.curiousapps.countryqlapi.domain.DetailCountry
 import com.curiousapps.countryqlapi.domain.GetCountriesUseCase
 import com.curiousapps.countryqlapi.domain.GetCountryUseCase
 import com.curiousapps.countryqlapi.domain.ListCountry
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class CountryViewModel(
+@HiltViewModel
+class CountryViewModel @Inject constructor(
     private val getCountriesUseCase: GetCountriesUseCase,
     private val getCountryUseCase: GetCountryUseCase
 ): ViewModel() {
