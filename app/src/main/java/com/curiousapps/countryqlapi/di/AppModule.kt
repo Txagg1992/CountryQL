@@ -14,7 +14,9 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
-
+// need to provide ApolloClient
+// need to provide CountryClient
+// need to provide useCases
     @Provides
     @Singleton
     fun provideApolloClient(): ApolloClient{

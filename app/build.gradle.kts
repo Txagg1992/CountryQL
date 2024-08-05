@@ -30,11 +30,11 @@ kotlin {
     }
 }
 android {
-    namespace = "com.curiousapps.calorie"
+    namespace = "com.curiousapps.countryqlapi"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.curiousapps.calorie"
+        applicationId = "com.curiousapps.countryqlapi"
         minSdk = 27
         targetSdk = 34
         versionCode = 1
